@@ -7,11 +7,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
-// app.get('/css', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../styles.css'))
-// })
+app.get('/css', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/styles.css'))
+})
 
-app.use(express.static('public'))
+// app.use(express.static('public'))
 
 const port = process.env.PORT || 4005
 
